@@ -156,14 +156,14 @@ Closes when: Sun < -5° below horizon
 ├─────────────────────────────────────────────────────────┤
 │ After time_up_early AND      │                          │
 │ (Brightness > threshold      │ ✅ Cover opens           │
-│  OR                          │                          │
+│  AND                         │                          │
 │  Sun > threshold)            │                          │
 ├─────────────────────────────────────────────────────────┤
 │ After time_up_late           │ ✅ Cover opens           │
 │ (REGARDLESS of sensors)      │    GUARANTEED            │
 └─────────────────────────────────────────────────────────┘
 
-⚠️  OR Logic: Only ONE sensor needs to exceed threshold!
+⚠️  AND Logic: ALL enabled sensors must exceed threshold!
 ```
 
 ### Closing (Evening)
